@@ -402,6 +402,8 @@ void domain_gone(struct domain *d)
 
     release_xs_watches(d);
 
+	error("INPUTSERVER DEBUG: d->is_pvm: %d, d->sstate: %d", d->is_pvm, d->sstate);
+
     if (d->is_pvm && d->sstate != 0)
         focus_domain_gone(d);
 
