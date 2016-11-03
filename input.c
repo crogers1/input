@@ -1666,9 +1666,6 @@ void input_inject(struct input_event *e, int slot, enum input_device_type input_
     {
         wiggle_ctrl_key(domain_pvm());
 
-        domain_wake_from_s3(mouse_dest);
-        domain_wake_from_s3(get_keyb_dest());
-        domain_wake_from_s3(domain_pvm());
         timeout_start();
     }
 
