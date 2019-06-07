@@ -29,7 +29,7 @@ static const int zero=0;
 static xc_interface *xc_handle = NULL;
 static bool destroy_in_fork = false;
 
-static struct domain *__domain_with(int offset, unsigned int size, const void *arg)
+static struct domain *__domain_with(long offset, unsigned long size, const void *arg)
 {
     int         i;
 
